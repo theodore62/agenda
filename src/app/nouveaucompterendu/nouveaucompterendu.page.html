@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons routerLink="/fiche" slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Compte Rendu</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+
+    <ion-content>
+
+        <ion-list>
+            <ion-item>
+                <ion-list-header>choisir la personne </ion-list-header>
+                <ion-select multiple="true" cancelText="annuler" okText="valider">
+                    <ion-select-option value="1">1</ion-select-option>
+                    <ion-select-option value="olives">Black Olives</ion-select-option>
+                    <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+                    <ion-select-option value="peppers">Green Peppers</ion-select-option>
+                    <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+                    <ion-select-option value="onions">Onions</ion-select-option>
+                    <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+                    <ion-select-option value="pineapple">Pineapple</ion-select-option>
+                    <ion-select-option value="sausage">Sausage</ion-select-option>
+                    <ion-select-option value="Spinach">Spinach</ion-select-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+        <ion-item>
+            <ion-label>La Date: </ion-label>
+            <ion-datetime displayFormat="DD/MMM/YYYY"></ion-datetime>
+        </ion-item>
+        <ion-list>
+            <ion-item>
+                <ion-col>
+                    <ion-label>rapport:</ion-label>
+                    <ion-item>
+                        <ion-textarea rows="6" cols="" placeholder="Enter any notes here..."></ion-textarea>
+                    </ion-item>
+
+                </ion-col>
+
+            </ion-item>
+
+
+
+        </ion-list>
+
+
+
+
+
+    </ion-content>
+    <ion-footer>
+        <ion-toolbar>
+
+            <ion-item>
+                <ion-note slot="end">
+                    <ion-icon routerLink="/fiche" color="secondary" class="image" name="checkmark-circle"></ion-icon>
+                </ion-note>
+
+                <ion-note slot="start">
+                    <ion-icon routerLink="/fiche" color="danger" class="image" name="close-circle"></ion-icon>
+                </ion-note>
+            </ion-item>
+
+
+        </ion-toolbar>
+    </ion-footer>

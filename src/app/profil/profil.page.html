@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+            <ion-title>profil</ion-title>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <ion-avatar>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+
+    <div class="ion-text">
+        <ion-text>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <p>Classement Vendeur:</p>
+                    </ion-col>
+                    <ion-col>
+                        <p>{{ position}}</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-text>
+
+        <div class="message" *ngIf="position == 1">
+
+            <ion-text color="secondary">
+                <p>{{Message}}</p>
+            </ion-text>
+            <ion-icon color="secondary" name="trophy"></ion-icon>
+
+        </div>
+        <div class="message" *ngIf="position >= 2 && position < 10">
+
+            <ion-text color="primary">
+                <p>{{Message}}</p>
+            </ion-text>
+            <ion-icon color="primary" name="thumbs-up"> </ion-icon>
+
+        </div>
+        <div class="message" *ngIf="position > 10">
+            <ion-text color="danger">
+                <p>{{Message}}</p>
+            </ion-text>
+            <ion-icon color="danger" name="thumbs-down"></ion-icon>
+        </div>
+
+    </div>
+
+</ion-content>

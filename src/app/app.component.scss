@@ -1,0 +1,28 @@
+ion-avatar {
+    padding: 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+}
+
+.ion-text {
+    padding: 0em;
+    text-align: center;
+}
+
+.message {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    size: 50px;
+}
+
+ion-icon {
+    height: 25px;
+    width: 25px;
+    padding: .5em;
+}

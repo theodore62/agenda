@@ -1,0 +1,104 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Home
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div>
+        <ion-title class="title">Aujourd'hui</ion-title>
+
+        <ion-chip class="item">
+
+            <div class="avatar " routerLink="/fiche">
+                <ion-avatar class="icon_fiche">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-avatar>
+                <ion-label class="name_avatar">Chip Avatar</ion-label>
+            </div>
+
+            <div class="content_icons">
+                <button class="date" icon-only (click)="presentToastWithOptions()">
+              <ion-icon class="date" name="calendar"></ion-icon>
+            </button>
+                <ion-icon routerLink="/localisation" class="fiche" name="pin"></ion-icon>
+            </div>
+
+        </ion-chip>
+
+        <ion-chip class="item">
+
+            <div class="avatar " routerLink="/fiche">
+                <ion-avatar class="icon_fiche">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-avatar>
+                <ion-label class="name_avatar">Chip Avatar</ion-label>
+            </div>
+
+            <div class="content_icons">
+                <button class="date" icon-only (click)="presentToastWithOptions()">
+              <ion-icon class="date" name="calendar"></ion-icon>
+            </button>
+                <ion-icon routerLink="/localisation" class="fiche" name="pin"></ion-icon>
+            </div>
+
+        </ion-chip>
+
+    </div>
+
+    <div>
+        <ion-title class="title">Demain</ion-title>
+
+        <ion-chip class="item">
+
+            <div class="avatar " routerLink="/fiche">
+                <ion-avatar class="icon_fiche">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-avatar>
+                <ion-label class="name_avatar">Chip Avatar</ion-label>
+            </div>
+
+            <div class="content_icons">
+                <button class="date" icon-only (click)="presentToastWithOptions()">
+            <ion-icon class="date" name="calendar"></ion-icon>
+          </button>
+                <ion-icon routerLink="/localisation" class="fiche" name="pin"></ion-icon>
+            </div>
+
+        </ion-chip>
+        <ion-chip class="item">
+
+            <div class="avatar " routerLink="/fiche">
+                <ion-avatar class="icon_fiche">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-avatar>
+                <ion-label class="name_avatar">Chip Avatar</ion-label>
+            </div>
+
+            <div class="content_icons">
+                <button class="date" icon-only (click)="presentToastWithOptions()">
+          <ion-icon class="date" name="calendar"></ion-icon>
+        </button>
+                <ion-icon routerLink="/localisation" class="fiche" name="pin"></ion-icon>
+            </div>
+
+        </ion-chip>
+
+    </div>
+
+
+
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-icon (click)="presentPopover()" class="ajout" name="add-circle-outline"></ion-icon>
+    </ion-toolbar>
+</ion-footer>

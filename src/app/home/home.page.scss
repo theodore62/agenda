@@ -1,0 +1,49 @@
+.title {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.item {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    height: 3em;
+}
+
+.avatar {
+    display: flex;
+    height: 2em;
+}
+
+.icon_fiche {
+    height: 2em;
+    width: 2em;
+}
+
+.name_avatar {
+    text-align: center;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+.fiche {
+    width: 2em;
+    height: 2em;
+    margin-left: 1rem;
+}
+
+.date {
+    height: 2em;
+    width: 2em
+}
+
+.content_icons {
+    margin-left: 2em;
+}
+
+.ajout {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80%;
+    width: 3em;
+    height: 3em;
+}
