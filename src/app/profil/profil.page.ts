@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProfilPage implements OnInit {
 
   public Message : String ;
-  public position : number = parseInt(Math.random() * ( 20- 1) + 1);
+  public position : number = Math.random() * ( 20- 1) + 1;
 
   constructor() { }
 
